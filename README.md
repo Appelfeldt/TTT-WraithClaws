@@ -1,1 +1,1 @@
-# Gmod-WraithKnife
+# Gmod-WraithClaws
