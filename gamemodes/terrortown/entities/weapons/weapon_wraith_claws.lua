@@ -40,10 +40,6 @@ SWEP.ViewModel = Model("models/weapons/cstrike/c_knife_t.mdl")
 SWEP.WorldModel = Model("models/weapons/w_knife_t.mdl")
 SWEP.HoldType = "knife"
 
-local fade_idle = 0.1;
-local fade_idle_crouch = 0.1;
-local fade_moving = 0.1;
-
 local str_wraith_fade = "ttt_wraith_fade"
 local str_wraith_fade_tick = "ttt_wraith_fade_tick"
 local str_wraith_leap_ready = "ttt_wraith_leap_ready"
@@ -73,9 +69,8 @@ SWEP.CanBuy = { ROLE_VAMPIRE, ROLE_KILLER }
 -- receive this weapon as soon as the round starts. In this case, none.
 SWEP.InLoadoutFor = nil
 
-
 -- If NoSights is true, the weapon won't have ironsights
---SWEP.NoSights = true
+SWEP.NoSights = true
 
 -- Equipment menu information is only needed on the client
 if CLIENT then
@@ -85,7 +80,7 @@ if CLIENT then
    -- Text shown in the equip menu
    SWEP.EquipMenuData = {
       type = "Weapon",
-      desc = [[While this weapon has energy, it makes you nearly invisible, take no fall damage and able to leap.
+      desc = [[While this weapon has energy it makes you nearly invisible, take no fall damage and able to leap.
 
 Primary is a melee attack, kills with it replenish your energy.
 
