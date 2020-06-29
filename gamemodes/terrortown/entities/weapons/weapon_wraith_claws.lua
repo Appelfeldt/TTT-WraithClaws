@@ -7,7 +7,7 @@ end
 
 if CLIENT then
    SWEP.PrintName = "Wraith Claws"
-   SWEP.Slot      = 8 -- add 1 to get the slot number key
+   SWEP.Slot = 7 -- add 1 to get the slot number key
 
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
@@ -55,14 +55,6 @@ local str_wraith_owner = "ttt_wraith_owner"
 -- Matching SWEP.Slot values: 0      1       2     3      4      6       7        8
 SWEP.Kind = WEAPON_EQUIP2
 
--- If AutoSpawnable is true and SWEP.Kind is not WEAPON_EQUIP1/2, then this gun can
--- be spawned as a random weapon. Of course this AK is special equipment so it won't,
--- but for the sake of example this is explicitly set to false anyway.
--- SWEP.AutoSpawnable = false
-
--- The AmmoEnt is the ammo entity that can be picked up when carrying this gun.
--- CanBuy is a table of ROLE_* entries like ROLE_TRAITOR and ROLE_DETECTIVE. If
--- a role is in this table, those players can buy this.
 SWEP.CanBuy = { ROLE_VAMPIRE, ROLE_KILLER }
 
 -- InLoadoutFor is a table of ROLE_* entries that specifies which roles should
